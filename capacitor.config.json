@@ -1,0 +1,13 @@
+{
+  "appId": "com.samelba.recipes",
+  "appName": "recipes",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/recipes",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

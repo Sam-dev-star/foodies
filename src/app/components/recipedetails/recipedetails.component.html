@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button defaultHref="/welcome" text="Welcome"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Détail de la recette</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <img src="{{apiSpoonImg}}{{recipe.image}}" />
+        <div *ngIf="recipeDetails">
+        <ion-card-header>
+          <ion-card-subtitle>{{ recipeDetails.sourceName}}</ion-card-subtitle>
+          <ion-card-title>{{ recipe.title }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ recipe | json }}
+        </ion-card-content>
+            
+        <h4>
+            {{ recipe.readyInMinutes }} minutes preparation time for
+            {{ recipe.servings }} Servings
+          </h4>
+          <h4 class="heading">Summary</h4>
+          <p [innerHTML]="recipe.summary"></p>
+          
+            <h3 class="heading">Instructions:</h3>
+
+            <p
+            *ngFor="let instruction of recipe.analyzedInstructions"
+            style="margin-left: 5px"
+          >
+    </div>
+      </ion-card>
+</ion-content>

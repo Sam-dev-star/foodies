@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search",
+  apiWine: "https://api.spoonacular.com/food/wine/recommendation",
+  api: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/479101/information",
+  apiImg:"https://spoonacular.com/recipeImages/",
+  apiImgKey:"7bfcf13e0a18406788a474bd39505634",
+  apiKey: "b850454dd6msh304a6d03a5246ecp1004bejsn6e049f0ea335",
+  apiHost:"spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+
+  // api information 
+  //tout mes api
 };
 
 /*
